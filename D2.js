@@ -2,19 +2,31 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const x = 5;
+const y = 23;
+const z = Math.min(x, y);
+
+console.log(z);
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let numero = 10;
+
+if (numero !== 5) {
+  ("not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (numero / 5) {
+  ("divisible per 5");
+} else {
+  ("non divisibile per 5");
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -50,7 +62,7 @@ if (totalShoppingCart >= 50) {
 
 totalShoppingCart = 80;
 
-if (totalShoppingCart >= 50) {
+if (20 % totalShoppingCart >= 50) {
   console.log("Free Shipping");
 } else {
   console.log("10€ Shipping");
@@ -138,7 +150,6 @@ Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rim
 delete me.lastName;
 
 console.log(me);
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
@@ -155,6 +166,7 @@ let myNumbers2 = [];
 myNumbers2.push(1, 2, 3, 4, 5);
 
 console.log(myNumbers2);
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */

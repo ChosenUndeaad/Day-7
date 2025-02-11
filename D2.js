@@ -14,18 +14,20 @@ console.log(z);
 
 let numero = 10;
 
-if (numero !== 5) {
-  ("not equal");
+if (numero === 5) {
+  console.log("equal");
+} else {
+  console.log("not equal");
 }
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-if (numero / 5) {
-  ("divisible per 5");
+if (numero % 5 === 0) {
+  console.log("divisibile per 5");
 } else {
-  ("non divisibile per 5");
+  console.log("non divisibile per 5");
 }
 
 /* ESERCIZIO 4

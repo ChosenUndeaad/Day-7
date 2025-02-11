@@ -35,7 +35,7 @@ if ((n1, n2, n1 + n2 === 8)) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-let totalShoppingCart = 45;
+let totalShoppingCart = 80;
 
 if (totalShoppingCart >= 50) {
   console.log("Free Shipping");
@@ -48,13 +48,23 @@ if (totalShoppingCart >= 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
+totalShoppingCart = 80;
+
+if (totalShoppingCart >= 50) {
+  console.log("Free Shipping");
+} else {
+  console.log("10€ Shipping");
+}
+
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num1 = 5;
+let num2 = 10;
+let num3 = 20;
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -117,28 +127,40 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+//Object.defineProperty(me, "City", { Value: Toronto });
+
+console.log(me);
 
 /* ESERCIZIO 12
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
+Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
+delete me.lastName;
+
+console.log(me);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop();
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let myNumbers2 = [];
 
+myNumbers2.push(1, 2, 3, 4, 5);
+
+console.log(myNumbers2);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+myNumbers[9] = 100;
+
+console.log(myNumbers);

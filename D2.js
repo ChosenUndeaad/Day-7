@@ -4,7 +4,7 @@
 
 const x = 5;
 const y = 23;
-const z = Math.min(x, y);
+const z = Math.max(x, y);
 
 console.log(z);
 
@@ -37,10 +37,8 @@ if (numero % 5 === 0) {
 let n1 = 4;
 let n2 = 4;
 
-if (n1 === 8 || n2 === 8 || n1 + n2 === 8 || Math.abs(n1 - n2) === 8) {
-  console.log("Uguale a 8");
-} else {
-  console.log("Diverso da 8");
+if (n1 === 8 || n2 === 8 || n1 + n2 === 8 || n1 - n2 === 8) {
+  console.log("Verificato");
 }
 
 /* ESERCIZIO 5
@@ -49,12 +47,13 @@ if (n1 === 8 || n2 === 8 || n1 + n2 === 8 || Math.abs(n1 - n2) === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-let totalShoppingCart = 80;
+let totalShoppingCart = 60;
+let shippingCost = 10;
 
 if (totalShoppingCart >= 50) {
-  console.log("Free Shipping");
+  console.log("Il tuo totale è :", totalShoppingCart);
 } else {
-  console.log("10€ Shipping");
+  console.log("Il tuo totale è :", totalShoppingCart + shippingCost);
 }
 
 /* ESERCIZIO 6
@@ -62,14 +61,14 @@ if (totalShoppingCart >= 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-totalShoppingCart = 80;
+totalShoppingCart = 60;
 
 let totalAfterDiscount = totalShoppingCart - totalShoppingCart * 0.2;
 
-if (totalShoppingCart >= 50) {
-  console.log("Free Shipping");
+if (totalAfterDiscount >= 50) {
+  console.log("Il tuo totale è :", totalAfterDiscount);
 } else {
-  console.log("10€ Shipping");
+  console.log("Il tuo totale è :", totalAfterDiscount + shippingCost);
 }
 
 /* ESERCIZIO 7
@@ -78,9 +77,10 @@ if (totalShoppingCart >= 50) {
   Alla fine mostra il risultato in console.
 */
 
-let num1 = 50;
-let num2 = 10;
-let num3 = 20;
+let bigNumber = [4, 6, 40, 1, 30];
+
+console.log(bigNumber.sort((a, b) => a - b));
+console.log(bigNumber.sort((a, b) => b - a));
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -116,28 +116,28 @@ if (n3 % 2) {
 */
 
 let val = 7;
-if (val < 10) {
-  console.log("Meno di 10");
-} else if (val < 5) {
+if (val < 5) {
   console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
 } else {
   console.log("Uguale a 10 o maggiore");
 }
 
 val = 2;
-if (val < 10) {
-  console.log("Meno di 10");
-} else if (val < 5) {
+if (val < 5) {
   console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
 } else {
   console.log("Uguale a 10 o maggiore");
 }
 
 val = 10;
-if (val < 10) {
-  console.log("Meno di 10");
-} else if (val < 5) {
+if (val < 5) {
   console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
 } else {
   console.log("Uguale a 10 o maggiore");
 }
@@ -176,7 +176,7 @@ me.skills.pop();
 
 let myNumbers2 = [];
 
-myNumbers2.push(1, 2, 3, 4, 5);
+myNumbers2.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 console.log(myNumbers2);
 

@@ -37,10 +37,10 @@ if (numero % 5 === 0) {
 let n1 = 4;
 let n2 = 4;
 
-if ((n1, n2, n1 + n2 === 8)) {
-  additon = true;
+if (n1 === 8 || n2 === 8 || n1 + n2 === 8 || Math.abs(n1 - n2) === 8) {
+  console.log("Uguale a 8");
 } else {
-  addition = false;
+  console.log("Diverso da 8");
 }
 
 /* ESERCIZIO 5
@@ -64,7 +64,9 @@ if (totalShoppingCart >= 50) {
 
 totalShoppingCart = 80;
 
-if (20 % totalShoppingCart >= 50) {
+let totalAfterDiscount = totalShoppingCart - totalShoppingCart * 0.2;
+
+if (totalShoppingCart >= 50) {
   console.log("Free Shipping");
 } else {
   console.log("10€ Shipping");
@@ -84,13 +86,22 @@ let num3 = 20;
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let myValue = "Maiale";
+
+typeof { myValue };
+console.log(typeof { myValue });
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let n3 = 4;
+
+if (n3 % 2) {
+  console.log("pari");
+} else {
+  console.log("Dispari");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -141,7 +152,7 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
-//Object.defineProperty(me, "City", { Value: Toronto });
+me.city = "Toronto";
 
 console.log(me);
 

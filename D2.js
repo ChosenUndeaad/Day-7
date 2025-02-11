@@ -78,7 +78,7 @@ if (totalShoppingCart >= 50) {
   Alla fine mostra il risultato in console.
 */
 
-let num1 = 5;
+let num1 = 50;
 let num2 = 10;
 let num3 = 20;
 
